@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<meta charset="utf-8">
+    <title>Asbeel: Responsive Web Design - Laravel PHP Framework - Twitter Bootstrap CSS & JavaScript Framework </title>
+    <link rel="stylesheet" href="stylesheet/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="stylesheet/normaliz.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="stylesheet/960.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="stylesheet/prettyPhoto.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet/font-awesome.min.css" type="text/css">
+    
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery.easing.js" type="text/javascript"></script>
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <script src="js/jquery.sticky.js" type="text/javascript"></script>
+    <script src="js/jquery.stellar.js" type="text/javascript"></script>
+    <script src="js/jquery.waypoints.js" type="text/javascript"></script>
+    <script src="js/jquery.isotope.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function(){
+			jQuery("a[data-gal^='prettyPhoto']").prettyPhoto({
+				social_tools: ''
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// validate signup form on keyup and submit
+			var validator = $("#contactform").validate({
+				rules: {
+					contactname: {
+						required: true,
+						minlength: 2
+					},
+					email: {
+						required: true,
+						email: true
+					},
+					subject: {
+						required: true,
+						minlength: 2
+					},
+					message: {
+						required: true,
+						minlength: 10
+					}
+				},
+				messages: {
+					contactname: {
+						required: "Please enter your name",
+						minlength: jQuery.format("Your name needs to be at least {0} characters")
+					},
+					email: {
+						required: "Please enter a valid email address",
+						minlength: "Please enter a valid email address"
+					},
+					subject: {
+						required: "You need to enter a subject!",
+						minlength: jQuery.format("Enter at least {0} characters")
+					},
+					message: {
+						required: "You need to enter a message!",
+						minlength: jQuery.format("Enter at least {0} characters")
+					}
+				},
+				// set this class to error-labels to indicate valid fields
+				success: function(label) {
+					label.addClass("checked");
+				}
+			});
+		});
+</script>
+</head>
+
+<body>
+<!-- Slide 1 Start -->
+<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+    <div class="overlay-background home-padding">
+        <div class="container clearfix">
+            <div class="grid_12">
+                <div class="left-border"></div>
+                <div class="home-text">Hello, Im</div>
+                <div class="right-border"></div>
+                <h1>Asbeel</h1>
+                <h2>PHP & Front-end developer</h2>
+                <!-- Button Bottom Start -->
+                <div class="left-border"></div>
+                    <div class="button-bottom">
+                        <a class="button" title data-slide="2"><span></span></a>
+                    </div>
+                <div class="right-border"></div>
+                <div class="clear"></div>
+                <!-- Button Bottom End -->
+            </div>
+        </div>
+        <div class="box-shadow"></div>
+    </div>
+</div>
+<!-- Slide 1 End -->
+
+<!-- Menu Start -->
+<div class="menu">    
+    <div class="container clearfix">
+        <!-- Logo Start -->
+        <div id="logo" class="left">
+            <a href="#"><img src="images/logo.png" alt=""></a>
+        </div>
+        <!-- Logo End -->
+        <!-- Navigation Start -->
+        <div id="nav" class="right">
+            <ul class="navigation">
+                <li data-slide="1">Home</li>
+                <li data-slide="2">About</li>
+                <li data-slide="4">Services</li>
+                <li data-slide="6">Contact</li>
+                <li class="clear"></li>
+            </ul>
+        </div>
+        <!-- Navigation End -->
+    </div>
+    <div class="sep-shadow"></div>
+</div>
+<!-- Menu End -->
+
+<!-- Slide 2 Start -->
+<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+    <div class="container clearfix">
+        <div class="grid_12">
+            <!-- Heading Start -->
+            <h1>About<span class="heading-arrow">}</span></h1>
+            <div class="heading-description">
+                I am a freelance & professional PHP web developer, specialized in developing, scaling and optimizing of succesful web applications, Responsive web design for smartphones and tablets, community websites and small/corporate business websites using technologies such as PHP 5.3, Laravel 4, HTML5, jQuery, CSS 3, Twitter Bootstrap ...
+            </div>
+            <div class="clear"></div>
+            <!-- Heading End -->
+        </div>
+        <div id="content">
+            <div class="grid_8">
+                <h4>My experience</h4>
+                <p>Over ten years of experience in the area of web applications guarantee a professional service in the projects I undertake daily both as a professional freelance of the sector and the services carried out in companies.</p>
+                <ul class="about-list">
+                    <li>Senior PHP Developer, Clicklline Services On Line, clickline.com.</li>
+                    <li>Senior PHP Developer, privalia.com.</li>
+                    <li>Senior PHP Developer, LetsBonus.com.</li>
+                    <li>Freelance PHP developer, asbeel.net.</li>
+                    <li>Internet Project Manager, Econsigna Engineering, PHP and MySql developer.</li>
+                </ul>
+            </div>
+            <div class="grid_4 omega">
+                <!-- Skills Start -->
+                <h4>My Skills</h4>
+                <ul id="skills">
+                    <li>PHP 5.3</li>
+                    <li class="progress progress-striped active">
+                        <div class="bar" style="width: 100%"><b>100%</b></div>
+                    </li>
+                    <li>Laravel 4</li>
+                    <li class="progress progress-striped">
+                        <div class="bar" style="width: 80%"><b>80%</b></div>
+                    </li>
+                    <li>Twitter Bootstrap</li>
+                    <li class="progress progress-striped active">
+                        <div class="bar" style="width: 90%"><b>90%</b></div>
+                    </li>
+                    <li>HTML5 & CSS3</li>
+                    <li class="progress progress-striped">
+                        <div class="bar" style="width: 70%"><b>70%</b></div>
+                    </li>
+                </ul>
+                <!-- Skills End -->
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!-- Slide 2 End -->
+
+<!-- Slide 3 Start -->
+<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+    <div class="overlay-background padding-slide3">
+        <div class="container clearfix">
+            <div class="grid_12">
+                <h1>The objective of my services</h1>
+                <p>Interpret and translate into a website the essence of the business and who directs this.</p>
+                <div class="left-border"></div>
+                <div class="block-button-top">
+                    <a class="button button-top" title="" data-slide="2"></a>
+                </div>
+                <div class="right-border"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Slide 3 End -->
+
+<!-- Slide 4 Start -->
+<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+    <div class="container clearfix">
+        <div class="grid_12">
+            <!-- Heading Start -->
+            <h1>Services<span class="heading-arrow">}</span></h1>
+            <div class="heading-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed quia non numquam.
+            </div>
+            <div class="clear"></div>
+            <!-- Heading End -->
+        </div>
+        <div class="grid_12">
+            <!-- Services Start -->
+            <div class="grid_4">
+                <a class="services-block" href="#">
+                    <ul class="icon">
+                        <li class="fontawesome-icon large circle icon-laptop"></li>
+                        <li class="fontawesome-icon large circle-deg icon-laptop"></li>
+					</ul>
+                    <p>Fully Responsive</p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros ipsum, facilisis eget scelerisque non, fermentum at tellus.
+                </a>
+            </div>
+            <div class="grid_4">
+                <a class="services-block" href="#">
+					<ul class="icon">
+                        <li class="fontawesome-icon large circle icon-spinner"></li>
+                        <li class="fontawesome-icon large circle-deg icon-spinner"></li>
+					</ul>
+                    <p>Quick to Work</p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros ipsum, facilisis eget scelerisque non, fermentum at tellus.
+                </a>
+            </div>
+            <div class="grid_4 omega">
+                <a class="services-block" href="#">
+                    <ul class="icon">
+                        <li class="fontawesome-icon large circle icon-location-arrow"></li>
+                        <li class="fontawesome-icon large circle-deg icon-location-arrow"></li>
+					</ul>
+                    <p>960 Grid System</p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros ipsum, facilisis eget scelerisque non, fermentum at tellus.
+                </a>
+            </div>
+            <div class="grid_4">
+                <a class="services-block" href="#">
+                    <ul class="icon">
+                        <li class="fontawesome-icon large circle icon-thumbs-up"></li>
+                        <li class="fontawesome-icon large circle-deg icon-thumbs-up"></li>
+					</ul>
+                    <p>Font Awesome Icons</p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros ipsum, facilisis eget scelerisque non, fermentum at tellus.
+                </a>
+            </div>
+            <div class="grid_4">
+                <a class="services-block" href="#">
+                    <ul class="icon">
+                        <li class="fontawesome-icon large circle icon-cogs"></li>
+                        <li class="fontawesome-icon large circle-deg icon-cogs"></li>
+					</ul>
+                    <p>Easy to Customize</p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros ipsum, facilisis eget scelerisque non, fermentum at tellus.
+                </a>
+            </div>
+            <div class="grid_4 omega">
+                <a class="services-block" href="#">
+                    <ul class="icon">
+                        <li class="fontawesome-icon large circle icon-leaf"></li>
+                        <li class="fontawesome-icon large circle-deg icon-leaf"></li>
+					</ul>
+                    <p>JQuery</p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros ipsum, facilisis eget scelerisque non, fermentum at tellus.
+                </a>
+            </div>
+            <div class="clear"></div>
+            <!-- Services End -->
+        </div>
+    </div>
+</div>
+<!-- Slide 4 End -->
+
+<!-- Slide 5 Start -->
+<div class="slide" id="slide7" data-slide="5" data-stellar-background-ratio="0.1">
+    <div class="overlay-background padding-slide7">
+        <div class="container clearfix">
+            <div class="grid_12">
+                <h1>Aenean ornare malesuada eros</h1>
+                <p>Sed sollicitudin ullamcorper diam, sed aliquam orci volutpat ut. Sed pellentesque ullamcorper eros ut rhoncus. Cras blandit commodo lorem et imperdiet. Aenean risus nulla, interdum at pretium sit amet, dictum ut justo.</p>
+                <div class="left-border"></div>
+                <div class="block-button-top">
+                    <a class="button button-top" title data-slide="6"></a>
+                </div>
+                <div class="right-border"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Slide 5 End -->
+
+<!-- Slide 6 Start -->
+<div class="slide" id="slide8" data-slide="6" data-stellar-background-ratio="0.5">
+    <div class="container clearfix">
+        <div class="grid_12">
+            <h1>Contact<span class="heading-arrow">}</span></h1>
+            <div class="heading-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed quia non numquam.
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="grid_12">
+            <h4>Contact Us</h4>
+            <p>Nunc tincidunt enim ac sapien porta congue. Nulla mi sapien, feugiat eget feugiat sed, pharetra vitae est. Cras pharetra eleifend posuere. Pellentesque volutpat tempus neque non rhoncus. Praesent et orci tellus. Aenean venenatis, nulla vitae lobortis tincidunt, libero metus sollicitudin dui, sagittis feugiat purus ante id massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec suscipit risus ut dui imperdiet a egestas lorem fermentum. </p>
+        </div> 	
+		
+		<!-- Contact Form Start -->
+		
+				
+		<div class="contact-form">
+			<form method="post" action="http://demo.spacetemplates.com/garden/index.php" id="contactform">
+				<div class="grid_6">
+					<input type="text" name="contactname" id="contactname" value="" placeholder="* Name">
+					<input type="text" name="email" id="email" value="" placeholder="* Email">
+					<input type="text" name="subject" id="subject" value="" placeholder="* Subject">
+				</div>
+				<div class="grid_6 omega">
+					<textarea name="message" id="message" placeholder="* Message"></textarea>
+				</div>
+				<div class="clear"></div>					
+				<p>* Required Fields</p>
+				<input type="submit" value="Send Message" name="submit" class="contact-button">
+			</form>
+		</div>
+		<div class="clear"></div>
+		<!-- Contact Form End -->
+	</div>
+</div>
+<!-- Slide 8 End -->
+
+<!-- Footer Start -->
+<div id="footer">
+	<div class="container clearfix">
+		<div class="copyright">Garden © 2013. All Rights Reserved.</div>
+		<div id="button-top-footer"><a class="button" title="" data-slide="1"></a></div>
+	</div>
+</div>
+<!-- Footer End -->
+
+</body>
+</html>
